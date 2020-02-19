@@ -11,7 +11,8 @@ import requests
 
 from lxml import etree
 
-from stock_analysis.utils import myDict
+# from stock_analysis.utils import myDict
+from utils import myDict
 
 import pymongo
 

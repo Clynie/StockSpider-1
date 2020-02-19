@@ -13,9 +13,11 @@ from PyQt5.QtWidgets import  QApplication, QHBoxLayout, QWidget, \
      QAction,QMainWindow,QVBoxLayout,QPushButton
 from PyQt5.QtGui import QIcon
 from pyecharts import Bar, Pie, Line, Overlap,Kline
+# from pyecharts.charts import Bar, Pie, Line, Kline
 from pyecharts_javascripthon.api import TRANSLATOR
 
-from stock_analysis.utils import myDict
+# from stock_analysis.utils import myDict
+from utils import myDict
 from rightview import RightTableView
 
 import pymongo
@@ -150,6 +152,7 @@ class Visualization(QMainWindow):
             # 初始化echarts
             self.BottomView.page().runJavaScript(
                 '''
+                    var echarts = require('echarts');
                     var myChart = echarts.init(document.getElementById('container'), 'light', {renderer: 'canvas'});
                     window.onresize = function(){{
                         myChart.resize();
@@ -173,6 +176,7 @@ class Visualization(QMainWindow):
             # 初始化echarts
             self.leftTopView.page().runJavaScript(
                 '''
+                    var echarts = require('echarts');
                     var myChart = echarts.init(document.getElementById('container'), 'light', {renderer: 'canvas'});
                     window.onresize = function(){{
                         myChart.resize();

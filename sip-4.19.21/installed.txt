@@ -1,0 +1,6 @@
+/Users/dxl/miniconda3/envs/Python_Scrapy/lib/python3.4/site-packages/sipconfig.py
+/Users/dxl/miniconda3/envs/Python_Scrapy/lib/python3.4/site-packages/sipdistutils.py
+/Users/dxl/miniconda3/envs/Python_Scrapy/include/python3.4m/sip.h
+/Users/dxl/miniconda3/envs/Python_Scrapy/bin/sip
+/Users/dxl/miniconda3/envs/Python_Scrapy/lib/python3.4/site-packages/sip.pyi
+/Users/dxl/miniconda3/envs/Python_Scrapy/lib/python3.4/site-packages/sip.so
